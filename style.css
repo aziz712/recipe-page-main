@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+ 
+:root{
+    --nutmeg:hsl(14, 45%, 36%);
+    --darck-Raspberry:hsl(332, 51%, 32%);
+    --white:hsl(0, 0%, 100%);
+    --Rose-White:hsl(330, 100%, 98%);
+    --Eggshell:hsl(30, 54%, 90%);
+    --light-Grey:hsl(30, 18%, 87%);
+    --Wenge-brown:hsl(30, 10%, 34%);
+    --dark-Charocoal:hsl(24, 5%, 18%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3%;
+    background-color: var(--Eggshell);
+    font-size: 16px;
+    color: var(--Wenge-brown);
+}
+
+hr {
+    border: 1px solid var(--light-Grey);
+}
+
+ol > li::marker {
+    color: var(--nutmeg);
+    font-family: 'Young Serif', 'Outfit', serif;
+    font-size: 8pt;
+}
+
+.ingredient li {
+    padding: 2%;
+}
+
+.recipe {
+    font-size: 83%;
+    line-height: 1.5em;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 25px;
+    margin: auto;
+    width: 45%;
+    padding: 27px;
+}
+
+.container h2 {
+    color: var(--nutmeg);
+}
+
+img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.Preparation li::marker {
+    color: var(--nutmeg);
+    font-family: 'Young Serif', 'Outfit', serif;
+    font-size: 8pt;
+}
+
+.Preparation {
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+    padding: 1%;
+    padding-left: 5%;
+}
+
+.Preparation li {
+    padding-left: 2%;
+    
+}
+
+.Preparation h4 {
+    color: hsl(332, 51%, 32%);
+}
+
+.table_nutrition {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table_nutrition td{
+    padding: 10px; 
+    padding-right: 30px;
+    border-bottom: 1px solid var(--light-Grey);
+}
+
+.nutrition p {
+    font-size: 83%;
+}
+
+.values {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+.number{
+    color: var(--nutmeg);
+    padding-right: 3%;
+    padding-left: 2%;
+}
+
+@media(max-width: 700px){
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
